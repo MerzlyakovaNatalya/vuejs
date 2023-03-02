@@ -1,6 +1,6 @@
 <template>
     <form @submit.prevent="onSubmit">
-        <input type="text" v-model="title">
+        <input type="text" v-model="title" class="input-text">
         <button type="submit">Добавить задачу</button>
     </form>
 </template>
@@ -28,3 +28,10 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+ .input-text {
+   margin-top: 40px;
+   margin-bottom: 40px;
+ }
+</style>
