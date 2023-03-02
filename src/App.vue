@@ -14,6 +14,7 @@
     <button @click="reload">Показать задачи</button>
   </div>
   <h2>Реализация REST API</h2>
+  <p>Задача поступила с сервера</p>
   <LoaderApi v-if="loading"/>
   <TodoServer 
   :todos="todosServer"
